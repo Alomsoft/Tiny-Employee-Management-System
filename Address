@@ -1,0 +1,36 @@
+import java.io.Serializable;
+class Address implements Serializable{
+	private Integer houseNo;
+	private String city;
+	private String locality;
+	private String pinCode;
+	
+	public void setHouseNo(Integer houseNo){
+		this.houseNo=houseNo;
+	}
+	public void setCity(String city){
+		this.city=city;
+	}
+	public void setLocality(String locality){
+		this.locality=locality;
+	}
+	public void setPinCode(String pinCode){
+		this.pinCode=pinCode;
+	}
+	
+	public Integer setHouseNo(){
+		return houseNo;
+	}
+	public String setCity(){
+		return city;
+	}
+	public String setLocality(){
+		return locality;
+	}
+	public String setPinCode(){
+		return pinCode;
+	}
+	 public String toString(){
+		 return "House No: "+houseNo+", City: "+city+", Area: "+locality+", Pin code: "+pinCode;
+	 }
+}
